@@ -1,0 +1,8 @@
+{
+  "name": "PetGarden",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

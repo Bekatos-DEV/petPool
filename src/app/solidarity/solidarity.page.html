@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="text-center">Yardımlaş</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="row">
+    <div class="col-12">
+      <swiper>
+        <ng-template swiperSlide
+          ><img
+            src="https://thorntons-investments.co.uk/wp-content/uploads/2017/08/500x200.png"
+        /></ng-template>
+        <ng-template swiperSlide
+          ><img
+            src="https://thorntons-investments.co.uk/wp-content/uploads/2017/08/500x200.png"
+        /></ng-template>
+        <ng-template swiperSlide
+          ><img
+            src="https://thorntons-investments.co.uk/wp-content/uploads/2017/08/500x200.png"
+        /></ng-template>
+      </swiper>
+    </div>
+  </div>
+  <div class="row">
+    <ion-content fullscreen>
+      <ion-card *ngFor="let a of animals">
+        <img [src]="a.img" style="width: 100%" />
+        <ion-card-header>
+          <ion-card-subtitle>{{a.gender}}</ion-card-subtitle>
+          <ion-card-title>{{a.name}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content> {{a.description}} </ion-card-content>
+      </ion-card>
+    </ion-content>
+  </div>
+</ion-content>

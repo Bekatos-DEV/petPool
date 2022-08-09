@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="text-center">Eşleştir</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let a of animals" style="position: absolute">
+    <ion-card-header>
+      <img [src]="a.img" style="width: 100%" />
+      <ion-card-subtitle
+        ><div class="row">
+          <div class="col-6">Yaş :{{ a.age }}</div>
+          <div class="col-6 text-right">Cins : {{ a.gender }}</div>
+        </div>
+      </ion-card-subtitle>
+      <ion-card-title class="text-center">{{ a.name }}</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

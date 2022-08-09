@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="text-center">Mesajlar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list no-padding>
+    <ion-item
+      *ngFor="let chat of chatData"
+      routerLink="/chat/{{ chat.id }}"
+      routerDirection="forward"
+    >
+      <ion-avatar class="chatImage" slot="start">
+        <ion-img [src]="chat.image"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <div class="withcount">
+          <div class="nameAvatar">
+            <h2 color="light">{{chat.name}}</h2>
+          </div>
+          <div class="timeEnd">
+            <ion-text slot="end" color="dark">
+              <ion-avatar class="chatCount" *ngIf="chat.count"
+                >{{chat.count}}</ion-avatar
+              >
+            </ion-text>
+          </div>
+        </div>
+        <p class="widthHalf">{{chat.description}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

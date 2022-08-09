@@ -1,0 +1,41 @@
+<ion-content class="ion-content">
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-7">
+      <div class="row" style="margin-top: 50% !important">
+        <div class="col-12 text-center">
+          <img src="../../assets/imgs/logo.png" style="max-width: 175px" />
+        </div>
+        <div class="col-12">
+          <ion-item>
+            <ion-label position="floating">Mail Adresiniz</ion-label>
+            <ion-input [(ngModel)]="userMail" type="text"></ion-input>
+          </ion-item>
+        </div>
+        <div class="col-12">
+          <ion-item>
+            <ion-label position="floating">Şifre</ion-label>
+            <ion-input type="password" [(ngModel)]="userPassword"></ion-input>
+          </ion-item>
+        </div>
+        <div class="col-12 text-center" style="margin-top: 5%">
+          <ion-button expand="block" color="dark" (click)="login()"
+            >Giriş Yap</ion-button
+          >
+        </div>
+        <div class="col-12 text-center" style="margin-top: 5%">
+          <ion-button expand="block" color="dark" [routerLink]="['/folder']"
+            ><ion-icon name="logo-google" style="margin-right: 5%"></ion-icon>
+            Google ile Giriş
+          </ion-button>
+        </div>
+        <div class="col-12 text-center" style="margin-top: 5%">
+          <ion-button expand="block" color="dark" [routerLink]="['/signup']"
+            >Üye Ol</ion-button
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-1"></div>
+  </div>
+</ion-content>

@@ -1,0 +1,43 @@
+<ion-content class="ion-content">
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-7">
+      <div class="row" style="margin-top: 50% !important">
+        <div class="col-12 text-center">
+          <img src="../../assets/imgs/logo.png" style="max-width: 175px" />
+        </div>
+        <div class="col-12">
+          <ion-item>
+            <ion-label position="floating">User Name</ion-label>
+            <ion-input type="text" [(ngModel)]="userName"></ion-input>
+          </ion-item>
+        </div>
+        <div class="col-12">
+          <ion-item>
+            <ion-label position="floating">Mail Adresiniz</ion-label>
+            <ion-input type="text" [(ngModel)]="userMail"></ion-input>
+          </ion-item>
+        </div>
+        <div class="col-12">
+          <ion-item>
+            <ion-label position="floating">Şifre</ion-label>
+            <ion-input type="password" [(ngModel)]="userPassword"></ion-input>
+          </ion-item>
+        </div>
+        <!-- <div class="col-12">
+          <ion-item>
+            <ion-label position="floating">Şifre (Tekrar)</ion-label>
+            <ion-input type="password" [(ngModel)]="pwAgain"></ion-input>
+          </ion-item>
+        </div> -->
+
+        <div class="col-12 text-center" style="margin-top: 5%">
+          <ion-button expand="block" color="dark" (click)="signUp()"
+            >Üye Ol</ion-button
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-4"></div>
+  </div>
+</ion-content>

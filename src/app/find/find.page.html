@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="text-center">Ara</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="row">
+    <ion-content fullscreen>
+      <ion-card *ngFor="let a of adverts" [routerLink]="['/advertdetail',a.id]">
+        <img [src]="a.photo" style="width: 100%" />
+        <ion-card-header>
+          <ion-card-subtitle
+            >{{a.genderName}}-- Yaş: {{a.age}}</ion-card-subtitle
+          >
+          <ion-card-title>{{a.description}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content> {{a.date}} </ion-card-content>
+      </ion-card>
+    </ion-content>
+  </div>
+</ion-content>

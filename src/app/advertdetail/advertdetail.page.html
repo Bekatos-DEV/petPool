@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>advertdetail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="row">
+    <ion-content fullscreen>
+      <ion-card *ngFor="let a of advert">
+        <img [src]="a.photo" style="width: 100%" />
+        <ion-card-header>
+          <ion-card-subtitle
+            >{{a.genderName}} -- Yaş : {{a.age}}</ion-card-subtitle
+          >
+          <ion-card-title>{{a.description}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content> {{a.date}} </ion-card-content>
+      </ion-card>
+
+      <ion-item>
+        <ion-button expand="full">Full Button</ion-button>
+      </ion-item>
+    </ion-content>
+  </div>
+</ion-content>

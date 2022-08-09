@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="text-center">Anasayfa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-content">
+  <div class="row text-center">
+    <div class="col-6">
+      <ion-card [routerLink]="['/match']">
+        <ion-card-header>
+          <img src="../../assets/imgs/love.gif" />
+          <ion-card-content style="padding: 0 0 0 0"
+            >Yavrun için eş bul</ion-card-content
+          >
+          <ion-card-subtitle style="padding-top: 20px"
+            >Eşleştir</ion-card-subtitle
+          >
+        </ion-card-header>
+      </ion-card>
+    </div>
+    <div class="col-6">
+      <ion-card [routerLink]="['/adoption']">
+        <ion-card-header>
+          <img src="../../assets/imgs/dog.gif" />
+          <ion-card-content style="padding: 0 0 0 0"
+            >Yavruna yeni yuva bul</ion-card-content
+          >
+          <ion-card-subtitle style="padding-top: 20px"
+            >Sahiplendir</ion-card-subtitle
+          >
+        </ion-card-header>
+      </ion-card>
+    </div>
+    <div class="col-6">
+      <ion-card [routerLink]="['/solidarity']">
+        <ion-card-header>
+          <img src="../../assets/imgs/syringe.gif" />
+          <ion-card-content style="padding: 0 0 0 0"
+            >Yavrunun ihtiyaçlarını karşıla</ion-card-content
+          >
+          <ion-card-subtitle style="padding-top: 20px"
+            >Yardımlaş</ion-card-subtitle
+          >
+        </ion-card-header>
+      </ion-card>
+    </div>
+    <div class="col-6">
+      <ion-card [routerLink]="['/find']">
+        <ion-card-header>
+          <img src="../../assets/imgs/search.gif" />
+          <ion-card-content style="padding: 0 0 0 0"
+            >Kaybolan yavrunu hemen bul</ion-card-content
+          >
+          <ion-card-subtitle style="padding-top: 20px">Ara</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>
